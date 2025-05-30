@@ -54,7 +54,7 @@ export default Contact = () => {
         className='py-3 px-8 w-max flex items-center justify-between gap-2
         bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>Submit now
         <Image src={assets.right_arrow_white} alt='' className='w-4'/></button>
-        <p className='mt-4'>sending...</p>
+        <p className='mt-4'>{result}</p>
        </form>
     </div>
   )

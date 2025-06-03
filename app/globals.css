@@ -1,7 +1,7 @@
-@tailwind base;
-@tailwind components;
+/* app/globals.css */
+@import "@tailwindcss/preflight";
 @tailwind utilities;
 
 *{
-  font-family: Outfit;
-}
+    font-family: Outfit;
+  }

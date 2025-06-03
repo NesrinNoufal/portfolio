@@ -2,6 +2,7 @@ import React,{useRef,useState,useEffect} from 'react'
 import Image from 'next/image'
 import {assets} from '../../assets/assets'
 
+
 const Navbar = ({isDarkMode,setIsDarkMode}) => {
  
   const [isScroll,setIsScroll]=useState(false)
@@ -27,16 +28,16 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
 
 
   return (
-    <div>
-        <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]
-        dark:hidden'>
-        <Image src={assets.header_bg_color} alt="" className='w-full'/>
+    <div className="relative">
+        <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'> 
+         
+        {/* <Image src={assets.header_bg_color} alt="" className='w-full'/> */}
         </div>
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
         flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opaity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20":""}`}>
           <a href='#to'>
             <Image src={isDarkMode? assets.logo_dark : assets.logo} alt="" className='w-28 
-             cursor-pointer mr-14'/>
+            cursor-pointer mr-14'/> 
           </a>
           <ul className={`small:hidden md:flex items-center gap-6 lg:gap-8 
           rounded-full px-12 py-3 ${isScroll ? "" :"bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent" }`}>
@@ -67,7 +68,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
 
             <div className='absolute right-6 top-6'>
                 <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='' className='w-5
-                cursor-pointer' onClick={closeMenu}/>
+                cursor-pointer' onClick={closeMenu}/> 
             </div>
 
             <li><a className='font-Ovo' href='#top' onClick={closeMenu}>Home</a></li>

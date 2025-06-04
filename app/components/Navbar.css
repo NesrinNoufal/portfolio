@@ -1,0 +1,234 @@
+/* Container */
+.navbar-container {
+    position: relative;
+    font-family: 'Ovo', serif;
+    color: #111;
+    background-color: transparent;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Navbar scrolled state */
+  .navbar.scrolled {
+    background-color: rgba(255 255 255 / 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  
+  /* Logo */
+  .logo-link {
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 7rem;
+    height: auto;
+    display: block;
+  }
+  
+  /* Navigation links - Desktop */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #555;
+    outline: none;
+  }
+  
+  /* Nav actions */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Buttons */
+  .darkmode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+  }
+  
+  .icon-small {
+    width: 1rem;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contact Button */
+  .contact-btn {
+    padding: 0.5rem 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-btn:hover,
+  .contact-btn:focus {
+    background-color: #e5e7eb;
+    outline: none;
+  }
+  
+  /* Mobile Menu Button */
+  .menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive - show/hide */
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+  
+  /* Side Menu */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 16rem;
+    height: 100vh;
+    background-color: #fff0f1;
+    padding: 5rem 2.5rem 2rem 2.5rem;
+    box-shadow: -4px 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 100;
+    overflow-y: auto;
+  }
+  
+  /* Close button container */
+  .close-btn-container {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Close icon */
+  .icon-close {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+  }
+  
+  /* Side menu nav links */
+  .side-menu .nav-link {
+    font-size: 1.125rem;
+    color: #111;
+  }
+  
+  .side-menu .nav-link:hover,
+  .side-menu .nav-link:focus {
+    color: #555;
+    outline: none;
+  }
+  
+  /* Dark Mode Styles */
+  .navbar-container.dark {
+    color: #eee;
+    background-color: transparent;
+  }
+  
+  .navbar-container.dark .navbar.scrolled {
+    background-color: rgba(18, 18, 18, 0.9);
+    box-shadow: 0 2px 8px rgba(255 255 255 / 0.2);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  
+  .navbar-container.dark .nav-link {
+    color: #eee;
+  }
+  
+  .navbar-container.dark .nav-link:hover,
+  .navbar-container.dark .nav-link:focus {
+    color: #bbb;
+  }
+  
+  .navbar-container.dark .contact-btn {
+    background-color: #eee;
+    color: #121212;
+    border-color: #bbb;
+  }
+  
+  .navbar-container.dark .contact-btn:hover,
+  .navbar-container.dark .contact-btn:focus {
+    background-color: #ddd;
+  }
+  
+  .navbar-container.dark .side-menu {
+    background-color: #222;
+    color: #eee;
+    box-shadow: -4px 0 12px rgba(255 255 255 / 0.15);
+  }
+  
+  .navbar-container.dark .side-menu .nav-link {
+    color: #eee;
+  }
+  
+  .navbar-container.dark .side-menu .nav-link:hover,
+  .navbar-container.dark .side-menu .nav-link:focus {
+    color: #bbb;
+  }
+  
+  /* Responsive media queries */
+  @media (min-width: 768px) {
+    .desktop-only {
+      display: flex;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
+  

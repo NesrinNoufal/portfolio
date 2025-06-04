@@ -1,0 +1,109 @@
+/* Container and layout */
+.services-container {
+    width: 100%;
+    padding: 40px 12%;
+    scroll-margin-top: 5rem; /* same as scroll-mt-20 */
+    box-sizing: border-box;
+    font-family: 'Ovo', serif;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .services-subtitle {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 1.125rem; /* text-lg */
+  }
+  
+  .services-title {
+    text-align: center;
+    font-size: 3rem; /* text-5xl */
+    margin: 0;
+  }
+  
+  .services-description {
+    text-align: center;
+    max-width: 640px; /* max-w-2xl */
+    margin: 20px auto 48px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 40px 0;
+  }
+  
+  /* Card */
+  .service-card {
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 48px 32px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 
+      box-shadow 0.5s ease,
+      transform 0.5s ease,
+      background-color 0.5s ease;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    background-color: #f0f4ff; /* lightHover */
+    transform: translateY(-4px);
+  }
+  
+  /* Dark mode card hover */
+  .dark .service-card:hover {
+    background-color: #2a2a3d; /* darkHover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .service-icon {
+    width: 40px; /* w-10 */
+    height: auto;
+  }
+  
+  .service-title {
+    font-size: 1.125rem; /* text-lg */
+    margin: 16px 0 8px;
+    color: #444;
+  }
+  
+  .dark .service-title {
+    color: #fff;
+  }
+  
+  .service-text {
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.4;
+    color: #666;
+  }
+  
+  .dark .service-text {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .service-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    margin-top: 20px;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .service-link:hover {
+    text-decoration: underline;
+  }
+  
+  .link-arrow {
+    width: 16px; /* w-4 */
+    height: auto;
+  }
+  

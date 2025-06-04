@@ -1,0 +1,154 @@
+.header-container {
+    width: 92%;
+    max-width: 768px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #111;
+    background-color: #fff;
+    font-family: 'Ovo', serif;
+  }
+  
+  .profile-img {
+    width: 8rem;
+    border-radius: 9999px;
+  }
+  
+  .intro-text {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+  }
+  
+  @media (min-width: 768px) {
+    .intro-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .hand-icon {
+    width: 1.5rem;
+  }
+  
+  .header-title {
+    font-size: 1.875rem;
+    color: #111;
+  }
+  
+  @media (min-width: 640px) {
+    .header-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-title {
+      font-size: 66px;
+    }
+  }
+  
+  .header-description {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #444;
+  }
+  
+  .header-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 640px) {
+    .header-buttons {
+      flex-direction: row;
+    }
+  }
+  
+  .btn {
+    padding: 0.75rem 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  .contact-btn {
+    background-color: transparent;
+  }
+  
+  .contact-btn:hover {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .resume-btn {
+    background-color: white;
+    color: black;
+  }
+  
+  .resume-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .icon {
+    width: 1rem;
+  }
+  
+  /* Dark Mode */
+  
+  .header-container.dark {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  .header-container.dark .intro-text {
+    color: #ddd;
+  }
+  
+  .header-container.dark .header-title {
+    color: #fff;
+  }
+  
+  .header-container.dark .header-description {
+    color: #bbb;
+  }
+  
+  .header-container.dark .btn {
+    border-color: #bbb;
+    color: #eee;
+    background-color: transparent;
+  }
+  
+  .header-container.dark .contact-btn:hover {
+    background-color: #eee;
+    color: #121212;
+  }
+  
+  .header-container.dark .resume-btn {
+    background-color: #eee;
+    color: #121212;
+    border-color: #bbb;
+  }
+  
+  .header-container.dark .resume-btn:hover {
+    background-color: #ddd;
+  }
+  

@@ -1,0 +1,165 @@
+.about-container {
+    width: 100%;
+    padding: 2.5rem 12%;
+    scroll-margin-top: 5rem;
+  }
+  
+  .about-intro {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-family: 'Ovo', serif;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Ovo', serif;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-content {
+      flex-direction: row;
+    }
+  }
+  
+  .about-image-container {
+    width: 16rem;
+    max-width: none;
+  }
+  
+  @media (min-width: 640px) {
+    .about-image-container {
+      width: 20rem;
+    }
+  }
+  
+  .about-image {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+  
+  .about-text-container {
+    flex: 1;
+  }
+  
+  .about-description {
+    margin-bottom: 2.5rem;
+    max-width: 42rem;
+    font-family: 'Ovo', serif;
+  }
+  
+  .about-info-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 42rem;
+  }
+  
+  @media (min-width: 640px) {
+    .about-info-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .about-info-item {
+    border: 0.5px solid gray;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .about-info-item:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-info-item.dark {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
+  }
+  
+  .info-icon {
+    width: 1.75rem;
+    margin-top: 0.75rem;
+  }
+  
+  .info-title {
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .about-info-item.dark .info-title {
+    color: white;
+  }
+  
+  .info-description {
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+  .about-info-item.dark .info-description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .tools-heading {
+    margin: 1.5rem 0;
+    color: #444;
+    font-family: 'Ovo', serif;
+  }
+  
+  .tools-heading.dark {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .tools-list {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  @media (min-width: 640px) {
+    .tools-list {
+      gap: 1.25rem;
+    }
+  }
+  
+  .tool-item {
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .tool-item:hover {
+    transform: translateY(-4px);
+  }
+  
+  .tool-icon {
+    width: 1.25rem;
+  }
+  
+  @media (min-width: 640px) {
+    .tool-icon {
+      width: 1.75rem;
+    }
+  }
+  

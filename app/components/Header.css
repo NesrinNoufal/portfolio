@@ -1,6 +1,4 @@
 .header-container {
-    width: 92%;
-    max-width: 768px;
     margin: 0 auto;
     height: 100vh;
     display: flex;
@@ -12,6 +10,7 @@
     color: #111;
     background-color: #fff;
     font-family: 'Ovo', serif;
+
   }
   
   .profile-img {

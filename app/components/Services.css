@@ -44,6 +44,7 @@
     border-radius: 8px;
     padding: 48px 32px;
     background-color: #fff;
+    /* background-color: inherit; */
     cursor: pointer;
     transition: 
       box-shadow 0.5s ease,
@@ -55,12 +56,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
     background-color: #f0f4ff; /* lightHover */
     transform: translateY(-4px);
-  }
-  
-  /* Dark mode card hover */
-  .dark .service-card:hover {
-    background-color: #2a2a3d; /* darkHover */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   }
   
   .service-icon {
@@ -106,4 +101,22 @@
     width: 16px; /* w-4 */
     height: auto;
   }
+
+  .services-container.dark{
+    color: white;
+    background-color: #121212;
+  }
+
+  .services-container.dark .service-card{
+    background-color: #121212;
+    border-color: white;
+  }
+
+   /* Dark mode card hover */
+  .services-container.dark.service-card:hover {
+    background-color: #2a2a3d; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+
   

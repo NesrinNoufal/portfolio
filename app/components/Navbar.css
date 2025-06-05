@@ -1,10 +1,13 @@
-/* Container */
+
 .navbar-container {
     position: relative;
     font-family: 'Ovo', serif;
     color: #111;
     background-color: transparent;
+    width:100%;
+    
   }
+
   
   /* Navbar */
   .navbar {
@@ -12,14 +15,16 @@
     top: 0;
     right: 0;
     left: 0;
+    width:100%;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 50;
-    background-color: transparent;
+    background-color: inherit;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
+  
   
   /* Navbar scrolled state */
   .navbar.scrolled {
@@ -46,6 +51,9 @@
     gap: 2rem;
     padding: 0;
     margin: 0;
+    border-radius: 30px;
+    padding: 16px 36px;
+    border:1px solid white;
   }
   
   .nav-link {
@@ -177,9 +185,11 @@
   
   /* Dark Mode Styles */
   .navbar-container.dark {
+    background-color:  rgba(18, 18, 18, 0.9);
     color: #eee;
-    background-color: transparent;
   }
+ 
+  
   
   .navbar-container.dark .navbar.scrolled {
     background-color: rgba(18, 18, 18, 0.9);
@@ -187,7 +197,7 @@
     backdrop-filter: saturate(180%) blur(20px);
   }
   
-  .navbar-container.dark .nav-link {
+  .navbar-container.dark.nav-link {
     color: #eee;
   }
   
@@ -196,7 +206,7 @@
     color: #bbb;
   }
   
-  .navbar-container.dark .contact-btn {
+  .navbar-container.dark.contact-btn {
     background-color: #eee;
     color: #121212;
     border-color: #bbb;
@@ -222,7 +232,7 @@
     color: #bbb;
   }
   
-  /* Responsive media queries */
+
   @media (min-width: 768px) {
     .desktop-only {
       display: flex;
@@ -232,3 +242,30 @@
     }
   }
   
+  /* ============ Responsive Layout ============ */
+
+/* Show desktop nav links at medium size */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .side-menu {
+    display: none;
+  }
+}
+
+/* Larger screen logo and padding */
+@media (min-width: 1024px) {
+  .logo {
+    width: 8rem;
+  }
+  .navbar {
+    padding: 1.25rem 3rem;
+  }
+  .contact-btn {
+    padding: 0.6rem 2rem;
+  }
+}

@@ -1,6 +1,6 @@
 /* Contact.css */
 
-.contact-section {
+.contact-container {
     width: 100%;
     padding: 2.5rem 12%;
     background: url("/footer-bg-color.png") no-repeat center;
@@ -90,30 +90,35 @@
   }
   
   /* DARK MODE SUPPORT */
-  body.dark .contact-section {
-    background: none;
-  }
-  
-  body.dark .contact-input,
-  body.dark .contact-textarea {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.9);
+  .contact-container.dark {
+    background-color: #121212;
     color: white;
   }
   
-  body.dark .contact-button {
+  .contact-container.dark .contact-input,
+  .contact-container.dark .contact-textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+  }
+  .contact-container.dark .contact-input ,
+  .contact-container.dark .contact-textarea {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .contact-container.dark .contact-button {
     background-color: transparent;
     border: 0.5px solid white;
   }
   
-  body.dark .contact-button:hover {
+  .contact-container.dark .contact-button:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
   
-  body.dark .contact-subheading,
-  body.dark .contact-heading,
-  body.dark .contact-description,
-  body.dark .contact-result {
+  .contact-container.dark .contact-subheading,
+  .contact-container.dark .contact-heading,
+  .contact-container.dark .contact-description,
+  .contact-container.dark .contact-result {
     color: white;
   }
   

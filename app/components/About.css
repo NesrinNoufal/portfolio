@@ -83,12 +83,7 @@
     transform: translateY(-4px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
-  
-  .about-info-item.dark {
-    border-color: white;
-    background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
-  }
+
   
   .info-icon {
     width: 1.75rem;
@@ -101,27 +96,15 @@
     color: #444;
   }
   
-  .about-info-item.dark .info-title {
-    color: white;
-  }
-  
   .info-description {
     color: #666;
     font-size: 0.875rem;
-  }
-  
-  .about-info-item.dark .info-description {
-    color: rgba(255, 255, 255, 0.8);
   }
   
   .tools-heading {
     margin: 1.5rem 0;
     color: #444;
     font-family: 'Ovo', serif;
-  }
-  
-  .tools-heading.dark {
-    color: rgba(255, 255, 255, 0.8);
   }
   
   .tools-list {
@@ -162,4 +145,27 @@
       width: 1.75rem;
     }
   }
+
+  .about-container .dark {
+     color: white;
+     background-color: #121212;
+  }
   
+  .about-info-item.dark {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
+  }
+
+  .about-info-item.dark .info-title {
+    color: white;
+  }
+
+  .about-info-item.dark .info-description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+    
+  .tools-heading.dark {
+    color: rgba(255, 255, 255, 0.8);
+  }

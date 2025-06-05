@@ -1,9 +1,11 @@
 /* Footer.css */
 
 .footer-container {
-    margin-top: 5rem;
+    padding-top: 5rem;
     color: #111; /* dark text for light mode */
     font-family: Arial, sans-serif;
+    width: 100%;
+    /* background-color: aqua; */
   }
   
   .footer-logo {

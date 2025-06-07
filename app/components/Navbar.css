@@ -4,8 +4,7 @@
     font-family: 'Ovo', serif;
     color: #111;
     background-color: transparent;
-    width:100%;
-    
+    width:100%; 
   }
 
   
@@ -128,15 +127,6 @@
     align-items: center;
   }
   
-  /* Responsive - show/hide */
-  .desktop-only {
-    display: none;
-  }
-  
-  .mobile-only {
-    display: block;
-  }
-  
   /* Side Menu */
   .side-menu {
     position: fixed;
@@ -231,41 +221,8 @@
   .navbar-container.dark .side-menu .nav-link:focus {
     color: #bbb;
   }
-  
 
-  @media (min-width: 768px) {
-    .desktop-only {
-      display: flex;
-    }
-    .mobile-only {
-      display: none;
-    }
-  }
-  
-  /* ============ Responsive Layout ============ */
 
-/* Show desktop nav links at medium size */
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-  }
-  .menu-btn {
-    display: none;
-  }
-  .side-menu {
-    display: none;
-  }
-}
 
-/* Larger screen logo and padding */
-@media (min-width: 1024px) {
-  .logo {
-    width: 8rem;
-  }
-  .navbar {
-    padding: 1.25rem 3rem;
-  }
-  .contact-btn {
-    padding: 0.6rem 2rem;
-  }
-}
+
+

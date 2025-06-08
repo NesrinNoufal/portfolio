@@ -15,6 +15,7 @@
   
   .profile-img {
     width: 8rem;
+    height:8rem;
     border-radius: 9999px;
   }
   
@@ -27,12 +28,6 @@
     color: #222;
   }
   
-  @media (min-width: 768px) {
-    .intro-text {
-      font-size: 1.5rem;
-    }
-  }
-  
   .hand-icon {
     width: 1.5rem;
   }
@@ -40,18 +35,6 @@
   .header-title {
     font-size: 1.875rem;
     color: #111;
-  }
-  
-  @media (min-width: 640px) {
-    .header-title {
-      font-size: 3.75rem;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .header-title {
-      font-size: 66px;
-    }
   }
   
   .header-description {
@@ -66,12 +49,6 @@
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-  }
-  
-  @media (min-width: 640px) {
-    .header-buttons {
-      flex-direction: row;
-    }
   }
   
   .btn {
@@ -91,6 +68,7 @@
   
   .contact-btn {
     background-color: transparent;
+    font-size: 1rem;
   }
   
   .contact-btn:hover {
@@ -151,3 +129,32 @@
     background-color: #ddd;
   }
   
+  @media (min-width: 768px) {
+    .intro-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .header-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-title {
+      font-size: 66px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .header-buttons {
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width:1024px) {
+    .header-title {
+      font-size: 2rem;
+    }
+  }

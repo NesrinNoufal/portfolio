@@ -50,7 +50,7 @@ const About = ({ isDarkMode }) => {
           viewport={{ once: true }}
           className="about-image-container"
         >
-          <Image src={assets.user_image} alt="user" className="about-image" />
+          {/* <Image src={assets.user_image} alt="user" className="about-image" /> */}
         </motion.div>
 
         <motion.div
@@ -61,10 +61,9 @@ const About = ({ isDarkMode }) => {
           className="about-text-container"
         >
           <p className="about-description">
-            I am an experienced full stack developer with over two years of
-            professional expertise in the field. Throughout my career, I have
-            had the privilege of collaborating with prestigious organizations,
-            contributing to their success and growth
+          Passionate Full Stack Developer with 2 years of experience building scalable web applications.
+           Adept at optimizing API performance, implementing real-time features, and enhancing user experience. Seeking opportunities to contribute to 
+           high-performance applications. 
           </p>
 
           <motion.ul

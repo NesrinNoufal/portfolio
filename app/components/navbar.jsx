@@ -36,11 +36,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
       <nav className={`navbar ${isScroll ? "scrolled" : ""}`}>
         <a href="#to" className="logo-link">
-          <Image
+          {/* <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             alt="Logo"
             className="logo"
-          />
+          /> */}
         </a>
 
         <ul className="nav-links desktop-only">

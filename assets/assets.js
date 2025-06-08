@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -11,11 +11,10 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
+import profile_img from "./profile_img.png"
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -35,9 +34,14 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import docker from './docker.png';
+import graphql from './graphql.png';
+import jira4 from './jira4.webp';
+import postgres1 from './postgres1.jpg';
+
+
 
 export const assets = {
-    user_image,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -50,7 +54,6 @@ export const assets = {
     git,
     mongodb,
     right_arrow_white,
-    logo,
     logo_dark,
     mail_icon,
     mail_icon_dark,
@@ -73,31 +76,45 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    docker,
+    jira4,
+    graphql,
+    postgres1
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Chat Application',
+        description: 'Real-time chat application built with Node.js, Express.js,,React.js and Socket.io',
         // bgImage: '/work-1.png',
+        link:'https://chat-app-5-iiu1.onrender.com/login'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Clothing Store',
+        description: 'Ecommerce application for the clothing store',
         // bgImage: '/work-2.png',
+        link:'https://ecommercelifestore.netlify.app/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Sync-meet',
+        description: 'Video-conferencing application built with Node.js, Express.js,React.js,webRTC and Socket.io',
         // bgImage: '/work-3.png',
+        link:""
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Covid-tracker',
+        description: 'Analysis dashboard for tracking covid cases in India built using React.js',
         // bgImage: '/work-4.png',
+        link:""
     },
-]
+    {
+        title: 'Agri-mart',
+        description: 'Marketplace application for agricultural products built using React.js,Node.js',
+        // bgImage: '/work-4.png',
+        link:""
+    },
+]   
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
@@ -107,11 +124,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technologies', description: 'HTML, CSS, JavaScript React Js, Next Js, Node Js, Express Js'},
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.mongodb, assets.git, assets.docker,assets.postgres1,assets.graphql,assets.jira4
 ];

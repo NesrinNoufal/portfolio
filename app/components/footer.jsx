@@ -6,18 +6,19 @@ import './Footer.css';
 const Footer = ({isDarkMode }) => {
   return (
     <div className={`footer-container ${isDarkMode ? "dark" : ''}`}>
-        <Image
+        {/* <Image
           src={isDarkMode ? assets.logo_dark : assets.logo}
           alt="logo"
           className="footer-logo"
-        />
+        /> */}
         <div className="footer-contact ">
           <Image
             src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon}
             alt="mail icon"
             className="mail-icon"
           />
-          nesrinnoufal99@gmail.com
+          <a href="mailto:nesrinnoufal99@gmail.com">nesrinnoufal99@gmail.com</a>
+
         </div>
       
 
@@ -35,8 +36,8 @@ const Footer = ({isDarkMode }) => {
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/nesrin_noufal">
-              Twitter
+            <a target="_blank" rel="noopener noreferrer" href="https://leetcode.com/u/NesrinNoufal99/">
+              Leetcode
             </a>
           </li>
         </ul>

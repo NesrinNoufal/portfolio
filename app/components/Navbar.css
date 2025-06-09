@@ -3,7 +3,6 @@
     position: relative;
     font-family: 'Ovo', serif;
     color: #111;
-    background-color: transparent;
     width:100%; 
   }
 
@@ -20,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 50;
-    background-color: inherit;
+    background: linear-gradient(to right, #f7f6f7, #f4eef5);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -38,7 +37,7 @@
   }
   
   .logo {
-    width: 7rem;
+    width: 15rem;
     height: auto;
     display: block;
   }
@@ -48,7 +47,7 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin: 0;
+    margin: auto 0;
     border-radius: 30px;
     padding: 16px 36px;
     border:1px solid white;
@@ -177,8 +176,9 @@
     background-color:  rgba(18, 18, 18, 0.9);
     color: #eee;
   }
- 
-  
+  .navbar-container.dark .navbar {
+    background: rgba(18, 18, 18, 0.9);
+  }
   
   .navbar-container.dark .navbar.scrolled {
     background-color: rgba(18, 18, 18, 0.9);
@@ -266,7 +266,7 @@
     padding: 10px 20px;
   }
   .nav-link {
-    font-size:.8rem;
+    font-size:1rem;
   }
   .contact-btn {
     font-size:.8rem;

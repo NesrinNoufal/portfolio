@@ -57,12 +57,14 @@ const Work = ({ isDarkMode }) => {
             style={{ backgroundImage: `url(${project.bgImage})` }}
           >
             <div className="work-card-info">
+              {/* <Image src={project.bgImage} alt="work-image" width={200} height={200} /> */}
               <div>
                 <h2 className="work-card-title">{project.title}</h2>
                 <p className="work-card-description">{project.description}</p>
               </div>
-              <div className="work-card-icon">
-                <Image src={assets.send_icon} alt="send-icon" width={20} height={20} />
+              <div className="work-card-icon-container">
+                <a href={project.source}><Image src={assets.git} className="work-card-icon" alt="send-icon" width={20} height={20} /></a>
+                <a href={project.demo}><Image src={assets.send_icon} className="work-card-icon" alt="send-icon" width={20} height={20} /></a>
               </div>
             </div>
           </motion.div>

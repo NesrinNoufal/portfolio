@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { assets } from "../../assets/assets";
 import './Header.css';
-import profile_img from "../../assets/public/profile_img.png";
+
 
 const Header = ({ isDarkMode }) => {
   return (
@@ -15,7 +15,7 @@ const Header = ({ isDarkMode }) => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
-        <Image src={profile_img} alt="" className="profile-img" 
+        <Image src={assets.profile_img} alt="" className="profile-img" 
         width={250} height={300}
          />
       </motion.div>

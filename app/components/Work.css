@@ -40,7 +40,7 @@
   }
   
   .work-grid {
-    background-color: #a3c86b;
+    /* background-color: #a3c86b; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -77,6 +77,7 @@
     justify-content: space-between;
     align-items: center;
     transition: bottom 0.3s ease;
+    box-shadow: 2px 2px 2px 1px #000;
   }
   
   .work-card:hover .work-card-info {
@@ -103,12 +104,17 @@
   .work-container.dark .work-card-description {
     color: #eee;
   }
+  .work-card-icon-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
   
   .work-card-icon {
-    border: 1px solid #000;
+    border: .5px solid #000;
     border-radius: 50%;
     width: 36px;
-    height: 36px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,16 +122,17 @@
     transition: background-color 0.3s ease;
   }
   
-  .work-card:hover .work-card-icon {
+  .work-card .work-card-icon:hover {
     background-color: #d4ed91; /* lime-300 */
   }
   
   .work-container.dark .work-card-icon {
     border-color: #eee;
     box-shadow: 2px 2px 0 #eee;
+    background-color: #eee;
   }
   
-  .work-container.dark .work-card:hover .work-card-icon {
+  .work-container.dark .work-card .work-card-icon:hover {
     background-color: #a3c86b; /* darker lime for dark mode */
   }
   

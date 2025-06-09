@@ -14,7 +14,6 @@ import right_arrow_white from './right-arrow-white.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from "./profile_img.png"
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -38,6 +37,11 @@ import docker from './docker.png';
 import graphql from './graphql.png';
 import jira4 from './jira4.webp';
 import postgres1 from './postgres1.jpg';
+import cloth_store from './cloth_store.png';
+import syncMeet from './syncMeet.png';
+import covid_tracker from './covid_tracker.png';
+import profile_img from './profile_img.png';
+import chatapp from './chatapp.png';
 
 
 
@@ -80,39 +84,51 @@ export const assets = {
     docker,
     jira4,
     graphql,
-    postgres1
+    postgres1,
+    chatapp,
+    cloth_store,
+    syncMeet,
+    covid_tracker,
+    profile_img
+
 };
 
 export const workData = [
+    
     {
         title: 'Chat Application',
         description: 'Real-time chat application built with Node.js, Express.js,,React.js and Socket.io',
-        // bgImage: '/work-1.png',
-        link:'https://chat-app-5-iiu1.onrender.com/login'
+        bgImage: '/chatapp.png',
+        demo:'https://chat-app-5-iiu1.onrender.com/login',
+        source:'https://github.com/NesrinNoufal/chat_app'
     },
     {
         title: 'Clothing Store',
         description: 'Ecommerce application for the clothing store',
-        // bgImage: '/work-2.png',
-        link:'https://ecommercelifestore.netlify.app/'
+        bgImage: '/cloth_store.png',
+        demo:'https://ecommercelifestore.netlify.app/',
+        source:'https://github.com/NesrinNoufal/ecommerceClothing'
     },
     {
         title: 'Sync-meet',
         description: 'Video-conferencing application built with Node.js, Express.js,React.js,webRTC and Socket.io',
-        // bgImage: '/work-3.png',
-        link:""
+        bgImage: '/syncMeet.png',
+        demo:"",
+        source:"https://github.com/NesrinNoufal/video-conferencing-platform"
     },
     {
         title: 'Covid-tracker',
         description: 'Analysis dashboard for tracking covid cases in India built using React.js',
-        // bgImage: '/work-4.png',
-        link:""
+        bgImage:'/covid_tracker.png',
+        demo:"https://covid-tracker-five-pi.vercel.app/",
+        source:"https://github.com/NesrinNoufal/covid-tracker"
     },
     {
         title: 'Agri-mart',
         description: 'Marketplace application for agricultural products built using React.js,Node.js',
-        // bgImage: '/work-4.png',
-        link:""
+        bgImage: '/agrimart.png',
+        demo:"https://agri-mart-zeta.vercel.app/",
+        source:"https://github.com/NesrinNoufal/agriMartFrontend"
     },
 ]   
 

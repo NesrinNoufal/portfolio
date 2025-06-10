@@ -46,7 +46,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <ul className="nav-links desktop-only">
           <li><a href="#top" className="nav-link">Home</a></li>
           <li><a href="#about" className="nav-link">About me</a></li>
-          <li><a href="#services" className="nav-link">Services</a></li>
+          {/* <li><a href="#services" className="nav-link">Services</a></li> */}
           <li><a href="#work" className="nav-link">My Work</a></li>
           <li><a href="#contact" className="nav-link">Contact me</a></li>
         </ul>

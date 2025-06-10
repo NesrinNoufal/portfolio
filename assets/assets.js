@@ -153,5 +153,4 @@ export const toolsData = [
     {icon:assets.postgres1,tool:'postgres'},
     {icon:assets.graphql,tool:'graphql'},
     {icon:assets.jira4,tool:'jira'}
-    // assets.vscode, assets.mongodb, assets.git, assets.docker,assets.postgres1,assets.graphql,assets.jira4
 ];

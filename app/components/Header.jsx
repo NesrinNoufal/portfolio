@@ -64,7 +64,7 @@ const Header = ({ isDarkMode }) => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           viewport={{ once: true }}
-          href="/sample-resume.pdf"
+          href="/nesrinnoufal_resume.pdf"
           download
           className="btn resume-btn"
         >

@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { assets, infoList } from "../../assets/assets";
 import "./About.css";
-import { Tooltip } from "react-tooltip";
+import Tooltip from '@mui/material/Tooltip';
+import Button from '@mui/material/Button';
 
 const About = ({ isDarkMode }) => {
   return (
@@ -114,7 +115,9 @@ const About = ({ isDarkMode }) => {
                 className="tool-item"
                 key={index}
               >
-               <Tooltip>tool <Image src={tool} alt="Tool" className="tool-icon" /></Tooltip>
+               <Tooltip title={tool.tool}>
+               <Image src={tool.icon} alt="Tool" className="tool-icon" />
+               </Tooltip>
               </motion.li>
             ))}
           </motion.ul>

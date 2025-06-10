@@ -146,5 +146,12 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.mongodb, assets.git, assets.docker,assets.postgres1,assets.graphql,assets.jira4
+    {icon:assets.vscode,tool:'vscode'},
+    {icon:assets.mongodb,tool:'mongodb'},
+    {icon:assets.git,tool:'git'},
+    {icon:assets.docker,tool:'docker'},
+    {icon:assets.postgres1,tool:'postgres'},
+    {icon:assets.graphql,tool:'graphql'},
+    {icon:assets.jira4,tool:'jira'}
+    // assets.vscode, assets.mongodb, assets.git, assets.docker,assets.postgres1,assets.graphql,assets.jira4
 ];

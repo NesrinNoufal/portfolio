@@ -70,6 +70,16 @@ const Header = ({ isDarkMode }) => {
         >
           my resume <Image src={assets.download_icon} alt="" className="icon" />
         </motion.a>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          viewport={{ once: true }}
+          href="https://github.com/NesrinNoufal"
+          className="btn contact-btn"
+        >
+          github <Image src={assets.git} alt="" className="icon" />
+        </motion.a>
       </div>
     </div>
   );

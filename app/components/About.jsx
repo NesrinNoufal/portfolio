@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 
 const About = ({ isDarkMode }) => {
   return (
-    <div className={`header-container ${isDarkMode ? "dark" : ""}`}>
+    <div className={`about-container ${isDarkMode ? "dark" : ""}`}>
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

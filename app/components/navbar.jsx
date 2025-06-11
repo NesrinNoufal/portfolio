@@ -89,7 +89,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
           <li><a href="#top" className="nav-link" onClick={closeMenu}>Home</a></li>
           <li><a href="#about" className="nav-link" onClick={closeMenu}>About me</a></li>
-          <li><a href="#services" className="nav-link" onClick={closeMenu}>Services</a></li>
+          {/* <li><a href="#services" className="nav-link" onClick={closeMenu}>Services</a></li> */}
           <li><a href="#work" className="nav-link" onClick={closeMenu}>My Work</a></li>
           <li><a href="#contact" className="nav-link" onClick={closeMenu}>Contact me</a></li>
         </ul>

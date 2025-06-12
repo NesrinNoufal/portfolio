@@ -65,7 +65,7 @@ const Header = ({ isDarkMode }) => {
           transition={{ duration: 0.6, delay: 1.2 }}
           viewport={{ once: true }}
           href="/nesrinnoufal_resume.pdf"
-          download
+          // download
           className="btn resume-btn"
         >
           my resume <Image src={assets.download_icon} alt="" className="icon" />

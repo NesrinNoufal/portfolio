@@ -59,17 +59,17 @@ const Header = ({ isDarkMode }) => {
         >
           contact me <Image src={assets.arrow_icon} alt="" className="icon" />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           viewport={{ once: true }}
-          href="/nesrinnoufal_resume.pdf"
+          // href="/nesrinnoufal_resume.pdf"
           // download
           className="btn resume-btn"
         >
           my resume <Image src={assets.download_icon} alt="" className="icon" />
-        </motion.a>
+        </motion.a> */}
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

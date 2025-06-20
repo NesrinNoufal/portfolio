@@ -6,7 +6,7 @@ import Image from "next/image";
 import { assets, infoList } from "../../assets/assets";
 import "./About.css";
 import Tooltip from '@mui/material/Tooltip';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 
 const About = ({ isDarkMode }) => {
   return (
